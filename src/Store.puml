@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Person{
+# String name
+# String address
+# String mail
+# String phoneNo
+
++ String getName()
++ void setName(String)
++ String getAddress()
+void setName(String)
+}
+
+class Customer{
+- ArrayList<Order> orders
+
++ void addOrder(Order o)
+}
+
+Person <|--Customer
+
+@enduml
